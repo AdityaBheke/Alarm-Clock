@@ -12,7 +12,7 @@ header h1{
 main{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 55%;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -32,23 +32,56 @@ main{
     font-weight: 800;
 }
 #alarm-details{
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-#alarm-details button{
-    background-color: darkgray;
-}
-.alarm-details-child{
-    width: 45%;
+.alarm-details-child-lg{
+    width: 100%;
     padding: 10px;
 }
-#set-alarm{
-    width: 25%;
-    margin: 20px;
+.alarm-details-child-md{
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.set-alarm{
+    width: 50%;
+    padding: 10px;
     border: none;
     border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(153, 153, 153);
+    color: black;
+}
+.set-alarm:active{
+    background-color: rgb(187, 187, 187);
+    color: black;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.alarm-list{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.alarm-list-item{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.alarm-time{
+    font-size: 3rem;
 }
