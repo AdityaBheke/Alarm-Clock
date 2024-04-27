@@ -104,6 +104,7 @@ function addAlarm(aName,aHours,aMinutes,aSound,aSnooze){
         }else{
             timeLeft = {hr:0,min:0,sec:0};
             timeLeftLabel.hidden = true;
+            snoozeButton.hidden = true;
             stopButton.textContent = 'Set alarm';
             isStopped = true;
         }
