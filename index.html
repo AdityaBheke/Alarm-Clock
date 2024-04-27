@@ -13,12 +13,12 @@
             <span class="current-time"></span>
             <span class="current-date"></span>
         </div>
-        <form >
+        <form id="alarm-form">
             <div id="alarm-details">
                 <label for="alarm-name" class="alarm-details-child-lg">Alarm Name</label>
-                <input type="text" placeholder="Enter alarm name" class="alarm-details-child-lg">
-                <label for="hours-label" class="alarm-details-child-md">Hours</label>
-                <label for="min-label" class="alarm-details-child-md">Minutes</label>
+                <input type="text" placeholder="Enter alarm name" class="alarm-details-child-lg" id="alarm-name">
+                <label for="hours" class="alarm-details-child-md">Hours</label>
+                <label for="minutes" class="alarm-details-child-md">Minutes</label>
                 <select name="hours" id="hours" class="alarm-details-child-md" required>
                     <option value="" selected disabled>Select hour</option>
                     <option value="00">00</option>
@@ -109,17 +109,22 @@
                     <option value="58">58</option>
                     <option value="59">59</option>
                 </select>
+                
                 <label for="sound" class="alarm-details-child-md">Alarm Sound</label>
                 <label for="snooze" class="alarm-details-child-md">Snooze</label>
-                <select name="sound" id="sound" class="alarm-details-child-md">
-                    <option value="sound1">Sound 1</option>
-                    <option value="sound2">Sound 2</option>
-                    <option value="sound3">Sound 3</option>
-                </select>
+                <div class="alarm-details-child-md" id="audio-tag-cont">
+                    <select name="sound" id="sound" class="alarm-details-child-md">
+                        <option value=1>Sound 1</option>
+                        <option value=2>Sound 2</option>
+                        <option value=3>Sound 3</option>
+                    </select>
+                    <img src="svgs/play-circle-fill.svg" alt="play-button" id="test-sound">
+                    <audio src="sounds/clock-alarm.mp3" id="test-sound-element"></audio>
+                </div>
                 <select name="snooze" id="snooze" class="alarm-details-child-md">
-                    <option value="off">Off</option>
-                    <option value="5min">5 min</option>
-                    <option value="10min">10 min</option>
+                    <option value="">Off</option>
+                    <option value="5">5 min</option>
+                    <option value="10">10 min</option>
                 </select>
                 <button type="submit" class="alarm-details-child-md mt-30 set-alarm">Add an Alarm</button>
             </div>
@@ -129,6 +134,7 @@
                 <span>Alarm Name</span>
                 <span class="alarm-time">23:00</span>
                 <span>06hr 14min 00s left </span>
+                <button class="set-alarm snooze-button">Stop alarm</button>
                 <button class="set-alarm">Stop alarm</button>
             </div>
         </div>
