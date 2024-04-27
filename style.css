@@ -59,9 +59,10 @@ main{
 }
 #test-sound{
     margin-left: 10px;
+    cursor: pointer;
 }
 .set-alarm{
-    width: 50%;
+    width: 45%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -69,9 +70,10 @@ main{
     margin-left: auto;
     background-color: rgb(153, 153, 153);
     color: black;
+    cursor: pointer;
 }
 .set-alarm:active{
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 .mt-30{
@@ -102,8 +104,17 @@ main{
 }
 .snooze-button{
     color: black;
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(255, 255, 255);
 }
 .snooze-button:active{
-    background-color: rgb(134, 255, 134);
+    background-color: rgb(164, 164, 164);
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.delete-alarm{
+    align-self: flex-end;
+    cursor: pointer;
 }
