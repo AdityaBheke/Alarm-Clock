@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Pagee Heading -->
     <header><h1>Alarm Clock</h1></header>
     <main>
+        <!-- Container for Live clock and semi-transparent background-->
         <div id="live-clock">
+            <!-- Current time in HH:MM:SS -->
             <span class="current-time"></span>
+            <!-- Current Date -->
             <span class="current-date"></span>
         </div>
+        <!-- Form containing details of an alarm -->
         <form id="alarm-form">
+            <!-- Container for elements of a form -->
             <div id="alarm-details">
+                <!-- Label for alarm Name -->
                 <label for="alarm-name" class="alarm-details-child-lg">Alarm Name</label>
+                <!-- Text field for alarm name -->
                 <input type="text" placeholder="Enter alarm name" class="alarm-details-child-lg" id="alarm-name">
+                <!-- Label for Hours -->
                 <label for="hours" class="alarm-details-child-md">Hours*</label>
+                <!-- Label for Minutes -->
                 <label for="minutes" class="alarm-details-child-md">Minutes*</label>
+                <!-- Dropdown to select Hour -->
                 <select name="hours" id="hours" class="alarm-details-child-md" required>
                     <option value="" selected disabled>Select hour</option>
                     <option value="00">00</option>
@@ -46,6 +57,7 @@
                     <option value="22">22</option>
                     <option value="23">23</option>
                 </select>
+                <!-- Dropdown to select Minutes -->
                 <select name="minutes" id="minutes" class="alarm-details-child-md" required>
                     <option value="" selected disabled>Select minutes</option>
                     <option value="00">00</option>
@@ -109,27 +121,35 @@
                     <option value="58">58</option>
                     <option value="59">59</option>
                 </select>
-                
+                <!-- Label for Alarm Sound -->
                 <label for="sound" class="alarm-details-child-md">Alarm Sound</label>
+                <!-- Label for Snooze -->
                 <label for="snooze" class="alarm-details-child-md">Snooze</label>
+                <!-- Container for Sound dropdown and test sound button -->
                 <div class="alarm-details-child-md" id="audio-tag-cont">
+                    <!-- Dropdown to select sound for an alarm -->
                     <select name="sound" id="sound" class="alarm-details-child-md">
                         <option value=1>Sound 1</option>
                         <option value=2>Sound 2</option>
                         <option value=3>Sound 3</option>
                     </select>
+                    <!-- Test sound icon -->
                     <img src="svgs/play-circle-fill.svg" alt="play-button" id="test-sound">
+                    <!-- Audio tag to test sound -->
                     <audio src="sounds/clock-alarm.mp3" id="test-sound-element"></audio>
                 </div>
+                <!-- Dropdown to select snooze for an alarm -->
                 <select name="snooze" id="snooze" class="alarm-details-child-md">
                     <option value="">Off</option>
                     <option value="1">1 min</option>
                     <option value="5">5 min</option>
                     <option value="10">10 min</option>
                 </select>
+                <!-- Submit button to Add an alarm -->
                 <button type="submit" class="alarm-details-child-md mt-30 set-alarm">Add an Alarm</button>
             </div>
         </form>
+        <!-- Contains list of alarms -->
         <div class="alarm-list">
         </div>
     </main>

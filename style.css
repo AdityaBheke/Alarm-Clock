@@ -1,6 +1,6 @@
+/* Basic background set-up for Body */
 body{
     color: white;
-    height: 100vh;
     background-image: linear-gradient(120deg, #700000,10%, black);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,6 +17,7 @@ main{
     margin-right: auto;
     margin-left: auto;
 }
+/* Live clock container */
 #live-clock{
     display: flex;
     flex-direction: column;
@@ -27,10 +28,12 @@ main{
     border-radius: 15px;
     background-color: rgba(90, 90, 90, 0.4)
 }
+/* Current time */
 .current-time{
     font-size: 80px;
     font-weight: 800;
 }
+/* contains form element */
 #alarm-details{
     font-size: 1.2rem;
     width: 100%;
@@ -40,27 +43,33 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+/* large elements inside form */
 .alarm-details-child-lg{
     width: 100%;
     padding: 10px;
 }
+/* medium elements inside form */
 .alarm-details-child-md{
     width: 45%;
     padding: 10px;
     box-sizing: border-box;
 }
+/* container for audio tag and test button */
 #audio-tag-cont{
     display: flex;
     align-items: center;
     padding: 0;
 }
+/* Sound dropdown */
 #sound{
     flex-grow: 1;
 }
+/* test dound button */
 #test-sound{
     margin-left: 10px;
     cursor: pointer;
 }
+/* 'Add an Alarm', 'snooze', 'stop alarm' buttons */
 .set-alarm{
     width: 45%;
     padding: 10px;
@@ -74,18 +83,19 @@ main{
 }
 .set-alarm:active{
     background-color: rgb(255, 255, 255);
-    color: black;
 }
 .mt-30{
     margin-top: 30px;
 }
+/* div containing list of alarms */
 .alarm-list{
     width: 100%;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+/* Alarm card */
 .alarm-list-item{
     height: 250px;
     width: 250px;
@@ -99,21 +109,24 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+/* alarm time of alarm card */
 .alarm-time{
     font-size: 3rem;
 }
+/* snooze buttonn */
 .snooze-button{
-    color: black;
     background-color: rgb(255, 255, 255);
 }
 .snooze-button:active{
     background-color: rgb(164, 164, 164);
 }
+/* contains snooze and stop alarm buttons */
 .button-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+/* delete alarm icon */
 .delete-alarm{
     align-self: flex-end;
     cursor: pointer;
