@@ -1,4 +1,4 @@
-#Readme for Alarm clock - 
+# Readme for Alarm clock - 
 
 -  This Alarm Clock is made using Html,CSS,JS.
 -  Here you can add multiple alarms and see list of alarms at the bottom of the page.
